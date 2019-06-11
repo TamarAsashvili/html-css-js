@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @media (min-width: 468px) {
+        .container-1 {
+          display: flex;
+          /* align-items: flex-end;
+         align-items: center;
+          flex-direction: row; */
+        }
+
+        .container-2 {
+          display: flex;
+          /* justify-content: flex-end; */
+          justify-content: space-between;
+        }
+      }
+
+      .container-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: rgb(233, 190, 241);
+      }
+
+      .container-1 div,
+      .container-2 div,
+      .container-3 div {
+        border: 1px rgb(214, 26, 26) solid;
+        padding: 10px;
+      }
+      .box-1 {
+        flex: 3;
+        order: 2;
+        background: orange;
+      }
+      .box-2 {
+        flex: 1;
+        order: 1;
+        background: rgb(236, 18, 236);
+      }
+      .box-3 {
+        flex: 4;
+        order: 23;
+        background: rgb(136, 255, 0);
+      }
+      .container-2-box {
+        flex-basis: 28%;
+        background: rgb(201, 5, 31);
+      }
+      .container-3-box {
+        flex-basis: 12%;
+        background: rgb(10, 212, 196);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="box-1">
+        <h3>Box one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="box-2">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="box-3">
+        <h3>Box 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="container-2-box">
+        <h3>Box 4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="container-2-box">
+        <h3>Box 5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="container-2-box">
+        <h3>Box 6</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="container-3-box">
+        <h3>Box 7</h3>
+        <p>
+          Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur
+          adipisicing.
+        </p>
+      </div>
+      <div class="container-3-box">
+        <h3>Box 8</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing. ipsum dolor sit
+          amet consectetur adipisicing.
+        </p>
+      </div>
+      <div class="container-3-box">
+        <h3>Box 9</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor
+          sit amet consectetur adipisicing.
+        </p>
+      </div>
+      <div class="container-3-box">
+        <h3>Box 10</h3>
+        <p>
+          Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur
+          adipisicing.
+        </p>
+      </div>
+      <div class="container-3-box">
+        <h3>Box 11</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing. ipsum dolor sit
+          amet consectetur adipisicing.
+        </p>
+      </div>
+      <div class="container-3-box">
+        <h3>Box 12</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, atque
+          earum. ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
